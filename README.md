@@ -13,6 +13,10 @@ This is particularly for me to practice a multi cloud, hybrid, multi virtualised
 
 do NOT use this yourself in anything that can be called production or dev or even test! This is my playground & if you ACTUALLY plug it into your own environments, thats 100% on you
 
+And yes I know it's probably better to have seperate repositories for each cloud environment and hybrids - but this is a learning experience for me..
+
+zero trust and blast radius are my next tattoos!
+
 
 
 
