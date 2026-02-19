@@ -1,4 +1,5 @@
 # Layered-Terraform-Practice-Example
+
 Setting up a layered multi cloud multi environment terraform
 
 Will try to setup a large corp mixed environment
@@ -17,6 +18,4 @@ And yes I know it's probably better to have seperate repositories for each cloud
 
 zero trust and blast radius are my next tattoos!
 
-
-
-
+I'm playing with branches too
