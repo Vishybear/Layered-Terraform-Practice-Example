@@ -70,17 +70,3 @@ provider "google" {
 
 
 }
-
-# //provider "nutanix" {
-    
-# //}
-
-# //provider "vcf" {
-
-# //}
-
-# //provider "docker" {
-# //}
-
-# //provider "maas" {
-# //}
