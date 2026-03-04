@@ -29,13 +29,7 @@ provider "aws" {
 
 provider "azurerm" {
   features {}
-  default_tags {
-    tags = {
-      "CreatedBy" = "Vishybear"
-      "Environment" = var.environment
-      "Project" = var.project_name
-    }
-  }
+  
 }   
 
 provider "google" {

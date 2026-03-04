@@ -28,3 +28,14 @@ variable "gcp_region" {
   default     = "europe-west2"
 }
 
+variable "gcp_zone" {
+  description = "The GCP zone to create resources in."
+  type        = string
+  default     = "europe-west2-a"
+}
+
+variable "gcp_project" {
+  description = "The GCP project to create resources in."
+  type        = string
+  default     = "my-gcp-project"
+}
