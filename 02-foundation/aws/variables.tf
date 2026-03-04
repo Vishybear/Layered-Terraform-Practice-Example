@@ -22,3 +22,13 @@ variable "aws_region" {
   type        = string
   default     = "eu-west-2"
 }
+
+variable "aws_profile" {
+  description = "AWS CLI profile to use"
+  type        = string
+  default     = "default"
+}
+variable "tags" {
+  type       = map(string)
+  default    = {}
+  }

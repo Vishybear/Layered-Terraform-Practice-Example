@@ -1,12 +1,7 @@
 terraform {
     required_version = ">= 1.5.0"
-    backend "s3" {
-        bucket = aws_s3_bucket.terraform_state.bucket
-        key    = "aws/dev/terraform.tfstate"
-        region = var.aws_region
-        encrypt = true
-        dynamodb_table = aws_dynamodb_table.terraform_state_lock.name
-    }
+    backend "s3" {} # The backend configuration is defined in the terraform.tfvars & backend.hcl files, which are not committed to version control for security reasons.
+    
     required_providers {
       
     aws = {
@@ -16,6 +11,7 @@ terraform {
     }
 }
 
+
 provider "aws" {
     region = var.aws_region
     profile = var.aws_profile
@@ -23,4 +19,7 @@ provider "aws" {
         tags = var.tags
     }
 }
+
+# The rest of the resources (VPC, subnets, security groups, etc.) are defined in separate .tf files within the same directory for better organization.
+
 

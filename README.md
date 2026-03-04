@@ -4,13 +4,13 @@ Setting up a layered multi cloud multi environment terraform
 
 Will try to setup a large corp mixed environment
 
-This is for learning to see what I can do in a larger environment with multiple hybrid apps. 
+This is for learning to see what I can do in a larger environment with multiple hybrid apps.
 
-please don't take any of this seriously. This is for me to update and upgrade my terraform skills. 
+please don't take any of this seriously. This is for me to update and upgrade my terraform skills.
 
 It will build up slowly as I get time to do it. Constructive criticism is always appreciated, reddit style isn't
 
-This is particularly for me to practice a multi cloud, hybrid, multi virtualised environment. 
+This is particularly for me to practice a multi cloud, hybrid, multi virtualised environment.
 
 do NOT use this yourself in anything that can be called production or dev or even test! This is my playground & if you ACTUALLY plug it into your own environments, thats 100% on you
 
@@ -18,6 +18,13 @@ And yes I know it's probably better to have seperate repositories for each cloud
 
 zero trust and blast radius are my next tattoos!
 
+Notes:
 
+01 Bootstrap - Run Once - creates S3 bucket & DynamoDB table & KMS key -> values exported to hcl file
 
+Then - foundation - aws
+
+terraform init \
+  -backend-config="../../../backend.hcl" \
+  -backend-config="key= **environment**/aws/terraform.tfstate"
 

@@ -14,9 +14,6 @@ terraform {
       source  = "hashicorp/google"
       version = "~> 6.36.1"
     }
-
-
-  
   }
     
   }
@@ -26,11 +23,8 @@ provider "aws" {
     default_tags {
         tags = {
             "CreatedBy" = "Vishybear"
-            "Environment" = var.environment
-            "Project" = var.project_name
         }
     }
-  
 }
 
 provider "azurerm" {
