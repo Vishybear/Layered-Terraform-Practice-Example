@@ -15,25 +15,7 @@ terraform {
       version = "~> 6.36.1"
     }
 
-    # nutanix = {
-    #   source = "nutanix/nutanix"
-    #   version = "2.4.0"
-    # }
 
-    # vcf = {
-    #   source = "vmware/vcf"
-    #   version = "0.17.1"
-    # }
-
-    # docker = {
-    #   source  = "kreuzwerker/docker"
-    #   version = "~> 2.13.0"
-    # }
-
-    # maas = {
-    #   source = "canonical/maas"
-    #   version = "2.7.2"
-    # }
   
   }
     
@@ -70,3 +52,24 @@ provider "google" {
 
 
 }
+
+
+    # nutanix = {
+    #   source = "nutanix/nutanix"
+    #   version = "2.4.0"
+    # }
+
+    # vcf = {
+    #   source = "vmware/vcf"
+    #   version = "0.17.1"
+    # }
+
+    # docker = {
+    #   source  = "kreuzwerker/docker"
+    #   version = "~> 2.13.0"
+    # }
+
+    # maas = {
+    #   source = "canonical/maas"
+    #   version = "2.7.2"
+    # }

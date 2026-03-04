@@ -37,5 +37,10 @@ variable "trusted_principals" {
 variable "tags" {
   description = "A map of tags to apply to all resources."
   type        = map(string)
-  default     = {}
+  default     = {
+    Environment = global
+    Cost = vishybear
+    Country = global
+    Department = finance
+  }
 }
