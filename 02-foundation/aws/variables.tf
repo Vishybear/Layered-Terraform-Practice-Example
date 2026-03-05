@@ -29,6 +29,6 @@ variable "aws_profile" {
   default     = "default"
 }
 variable "tags" {
-  type       = map(string)
-  default    = {}
-  }
+  type    = map(string)
+  default = {}
+}

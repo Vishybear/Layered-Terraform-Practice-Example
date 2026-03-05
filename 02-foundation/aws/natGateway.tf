@@ -4,7 +4,7 @@ resource "aws_nat_gateway" "main" {
 
   allocation_id = aws_eip.nat[count.index].id
   subnet_id     = aws_subnet.public[count.index].id
-  depends_on = [ aws_subnet.private ]
+  depends_on    = [aws_subnet.private]
   tags = {
     Name        = "${var.environment}-nat-${count.index + 1}"
     Environment = var.environment

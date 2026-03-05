@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 1.5.0"
+  required_version = ">= 1.14.0"
 
   required_providers {
 
@@ -64,15 +64,15 @@ resource "aws_s3_bucket_public_access_block" "terraform_state_public_access_bloc
 }
 
 #DynamoDB table for state locking
-resource "aws_dynamodb_table" "terraform_state_lock" {
-  name         = var.ddb_table_name
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "LockID"
-  attribute {
-    name = "LockID"
-    type = "S"
-  }
-
-  tags = merge(var.tags, { Name = "${var.name_prefix}-tf-lock-table" })
-}
+# resource "aws_dynamodb_table" "terraform_state_lock" {
+#  name         = var.ddb_table_name
+#  billing_mode = "PAY_PER_REQUEST"
+#  hash_key     = "LockID"
+#  attribute {
+#    type = "S"
+##    name = "LockID"
+#  }
+#
+#  tags = merge(var.tags, { Name = "${var.name_prefix}-tf-lock-table" })
+#}
 

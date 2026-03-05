@@ -3,10 +3,7 @@
 # This ties together foundation, platform, and application layers
 
 terraform {
-  required_version = ">= 1.5.0"
-
-  # Configure remote state backend
-  backend "s3" {}
+  required_version = ">= 1.14.0"
   
 
   required_providers {
