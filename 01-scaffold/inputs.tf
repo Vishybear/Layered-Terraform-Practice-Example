@@ -22,12 +22,12 @@ variable "s3_bucket_name" {
   default     = "vishybear-terraform-state"
 }
 
-variable "ddb_table_name" {
-  description = "The name of the DynamoDB table to create for state locking."
-  type        = string
-  default     = "vishybear-terraform-state-lock"
-}
-
+# variable "ddb_table_name" {
+ # description = "The name of the DynamoDB table to create for state locking."
+#  type        = string
+ # default     = "vishybear-terraform-state-lock"
+#}
+#
 variable "trusted_principals" {
   description = "A list of AWS IAM ARNs that are allowed to access the S3 bucket and DynamoDB table."
   type        = list(string)
@@ -37,6 +37,6 @@ variable "trusted_principals" {
 variable "tags" {
   description = "A map of tags to apply to all resources."
   type        = map(string)
-  default     = {
-    }
+  default = {
+  }
 }
