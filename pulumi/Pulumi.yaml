@@ -1,0 +1,11 @@
+name: layered-infra
+description: Pulumi migration of Layered Terraform Practice Example
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-python
