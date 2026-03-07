@@ -20,7 +20,9 @@ zero trust and blast radius are my next tattoos!
 
 Notes:
 
-01 Bootstrap - Run Once - creates S3 bucket & DynamoDB table & KMS key -> values exported to hcl file
+ i'm on the latest version of terraform so no dynamodb on aws
+
+01 Bootstrap - Run Once - creates S3 bucket & KMS key -> values exported to hcl file
 
 Then - foundation - aws
 
